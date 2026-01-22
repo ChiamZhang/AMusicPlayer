@@ -132,10 +132,7 @@ export const getLatestReleaseInfo = async (): Promise<GithubReleaseInfo | null> 
     // 构建 API URL 列表
     const apiUrls = [
       // 原始地址
-      'https://api.github.com/repos/algerkong/ChiamMusic/releases/latest',
-
-      // 使用代理节点
-      'http://music.alger.fun/package.json'
+      'https://api.github.com/repos/ChiamZhang/AMusicPlayer/releases/latest'
     ];
 
     if (token) {
@@ -149,20 +146,6 @@ export const getLatestReleaseInfo = async (): Promise<GithubReleaseInfo | null> 
           timeout: REQUEST_TIMEOUT
         });
 
-        if (url.includes('package.json')) {
-          // 如果是 package.json，获取对应的 CHANGELOG
-          const changelogUrl = url.replace('package.json', 'CHANGELOG.md');
-          const changelogResponse = await axios.get(changelogUrl, {
-            timeout: REQUEST_TIMEOUT
-          });
-
-          return {
-            tag_name: response.data.version,
-            body: changelogResponse.data,
-            html_url: 'https://github.com/algerkong/ChiamMusic/releases/latest',
-            assets: []
-          } as unknown as GithubReleaseInfo;
-        }
         return response.data;
       } catch (err) {
         console.warn(`尝试访问 ${url} 失败:`, err);
