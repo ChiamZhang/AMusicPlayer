@@ -69,7 +69,7 @@ const rememberChoice = ref(false);
 
 const openDownloadPage = () => {
   if (!isElectron) {
-    window.open('http://donate.alger.fun/download', '_blank');
+    window.open('https://github.com/ChiamZhang/AMusicPlayer/releases', '_blank');
   }
 };
 

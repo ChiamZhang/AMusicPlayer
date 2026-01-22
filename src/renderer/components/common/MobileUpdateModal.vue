@@ -169,7 +169,7 @@ const handleUpdate = async () => {
   const version = updateInfo.value.latestVersion;
 
   // Android APK 下载地址
-  const downloadUrl = `https://github.com/algerkong/ChiamMusic/releases/download/v${version}/ChiamMusic-${version}.apk`;
+  const downloadUrl = `https://github.com/ChiamZhang/AMusicPlayer/releases/download/v${version}/AMusicPlayer-${version}.apk`;
 
   try {
     // 获取代理节点
@@ -189,7 +189,7 @@ const handleUpdate = async () => {
     // 回退到直接打开 GitHub Releases
     const releaseUrl =
       updateInfo.value.releaseInfo?.html_url ||
-      'https://github.com/algerkong/ChiamMusic/releases/latest';
+      'https://github.com/ChiamZhang/AMusicPlayer/releases/latest';
     window.open(releaseUrl, '_blank');
     closeModal();
   }

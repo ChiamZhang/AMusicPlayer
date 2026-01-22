@@ -9,7 +9,7 @@
     :mask-closable="false"
   >
     <n-drawer-content
-      title="欢迎使用 ChiamMusic"
+      title="欢迎使用 AMusicPlayer"
       closable
       :native-scrollbar="false"
       class="mac-style-drawer"
@@ -31,7 +31,11 @@
           </div>
 
           <div class="action-links">
-            <a href="http://donate.alger.fun/download" target="_blank" class="download-link">
+            <a
+              href="https://github.com/ChiamZhang/AMusicPlayer/releases"
+              target="_blank"
+              class="download-link"
+            >
               <i class="ri-download-2-line mr-1"></i> 立即下载
             </a>
           </div>

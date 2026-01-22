@@ -58,7 +58,7 @@
           <a
             class="text-green-500"
             target="_blank"
-            href="https://github.com/algerkong/ChiamMusic/releases"
+            href="https://github.com/ChiamZhang/AMusicPlayer/releases"
             >GitHub</a
           >
           {{ t('comp.installApp.downloadProblemLinkText') }}
@@ -236,17 +236,17 @@ const handleUpdate = async () => {
   const version = updateInfo.value.latestVersion;
   const downUrls = {
     win32: {
-      all: `https://github.com/algerkong/ChiamMusic/releases/download/v${version}/ChiamMusic-${version}-win.exe`,
-      x64: `https://github.com/algerkong/ChiamMusic/releases/download/v${version}/ChiamMusic-${version}-win-x64.exe`,
-      ia32: `https://github.com/algerkong/ChiamMusic/releases/download/v${version}/ChiamMusic-${version}-win-ia32.exe`
+      all: `https://github.com/ChiamZhang/AMusicPlayer/releases/download/v${version}/AMusicPlayer-${version}-win.exe`,
+      x64: `https://github.com/ChiamZhang/AMusicPlayer/releases/download/v${version}/AMusicPlayer-${version}-win-x64.exe`,
+      ia32: `https://github.com/ChiamZhang/AMusicPlayer/releases/download/v${version}/AMusicPlayer-${version}-win-ia32.exe`
     },
     darwin: {
-      x64: `https://github.com/algerkong/ChiamMusic/releases/download/v${version}/ChiamMusic-${version}-x64.dmg`,
-      arm64: `https://github.com/algerkong/ChiamMusic/releases/download/v${version}/ChiamMusic-${version}-arm64.dmg`
+      x64: `https://github.com/ChiamZhang/AMusicPlayer/releases/download/v${version}/AMusicPlayer-${version}-x64.dmg`,
+      arm64: `https://github.com/ChiamZhang/AMusicPlayer/releases/download/v${version}/AMusicPlayer-${version}-arm64.dmg`
     },
     linux: {
-      AppImage: `https://github.com/algerkong/ChiamMusic/releases/download/v${version}/ChiamMusic-${version}-linux-x64.AppImage`,
-      deb: `https://github.com/algerkong/ChiamMusic/releases/download/v${version}/ChiamMusic-${version}-linux-x64.deb`
+      AppImage: `https://github.com/ChiamZhang/AMusicPlayer/releases/download/v${version}/AMusicPlayer-${version}-linux-x64.AppImage`,
+      deb: `https://github.com/ChiamZhang/AMusicPlayer/releases/download/v${version}/AMusicPlayer-${version}-linux-x64.deb`
     }
   };
 
@@ -298,7 +298,7 @@ const handleUpdate = async () => {
     }
   } else {
     message.error(t('comp.update.noDownloadUrl'));
-    window.open('https://github.com/algerkong/ChiamMusic/releases/latest', '_blank');
+    window.open('https://github.com/ChiamZhang/AMusicPlayer/releases/latest', '_blank');
   }
 };
 </script>

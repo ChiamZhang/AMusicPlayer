@@ -112,7 +112,7 @@ if (!isSingleInstance) {
   // 应用程序准备就绪时的处理
   app.whenReady().then(() => {
     // 设置应用ID
-    electronApp.setAppUserModelId('com.alger.music');
+    electronApp.setAppUserModelId('com.amusicplayer.app');
 
     // macOS 开发/预览模式下显式设置 Dock 图标
     if (process.platform === 'darwin') {

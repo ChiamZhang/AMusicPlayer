@@ -1,10 +1,10 @@
 {
-  "name": "ChiamMusic",
+  "name": "AMusicPlayer",
   "version": "5.0.0",
-  "description": "Chiam Music",
-  "author": "Alger <algerkc@qq.com>",
+  "description": "AMusicPlayer",
+  "author": "AMusicPlayer",
   "main": "./out/main/index.js",
-  "homepage": "https://github.com/algerkong/ChiamMusic",
+  "homepage": "https://github.com/ChiamZhang/AMusicPlayer",
   "scripts": {
     "prepare": "husky",
     "format": "prettier --write ./src",
@@ -115,13 +115,13 @@
     "vue-tsc": "^2.2.12"
   },
   "build": {
-    "appId": "com.alger.music",
-    "productName": "ChiamMusic",
+    "appId": "com.chiam.amusicplayer",
+    "productName": "AMusicPlayer",
     "publish": [
       {
         "provider": "github",
-        "owner": "algerkong",
-        "repo": "ChiamMusic"
+        "owner": "ChiamZhang",
+        "repo": "AMusicPlayer"
       }
     ],
     "files": [
@@ -153,7 +153,7 @@
         {
           "target": "dmg",
           "arch": [
-            "universal"
+            "arm64"
           ]
         }
       ],
@@ -164,7 +164,7 @@
       "entitlements": "build/entitlements.mac.plist",
       "entitlementsInherit": "build/entitlements.mac.plist",
       "extendInfo": {
-        "NSMicrophoneUsageDescription": "ChiamMusic needs access to the microphone for audio visualization.",
+        "NSMicrophoneUsageDescription": "AMusicPlayer needs access to the microphone for audio visualization.",
         "NSCameraUsageDescription": "Application requests access to the device's camera.",
         "NSDocumentsFolderUsageDescription": "Application requests access to the user's Documents folder.",
         "NSDownloadsFolderUsageDescription": "Application requests access to the user's Downloads folder."
@@ -173,7 +173,7 @@
       "identity": null,
       "type": "distribution",
       "binaries": [
-        "Contents/MacOS/ChiamMusic"
+        "Contents/MacOS/AMusicPlayer"
       ]
     },
     "win": {
@@ -218,7 +218,7 @@
       ],
       "artifactName": "${productName}-${version}-linux-${arch}.${ext}",
       "category": "Audio",
-      "maintainer": "Alger <algerkc@qq.com>"
+      "maintainer": "AMusicPlayer"
     },
     "nsis": {
       "oneClick": false,
@@ -227,10 +227,10 @@
       "uninstallerIcon": "resources/icon.ico",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "ChiamMusic",
+      "shortcutName": "AMusicPlayer",
       "include": "build/installer.nsh",
       "deleteAppDataOnUninstall": true,
-      "uninstallDisplayName": "ChiamMusic"
+      "uninstallDisplayName": "AMusicPlayer"
     }
   },
   "pnpm": {

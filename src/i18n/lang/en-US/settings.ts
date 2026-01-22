@@ -129,11 +129,11 @@ export default {
         title: 'Imported Scripts',
         importLocal: 'Import Local',
         author: 'Author',
-        authorDesc: 'algerkong, please star 🌟',
-        originalAuthor: 'Original Author',
-        originalAuthorDesc: 'Alger / algerkong',
+        authorDesc: 'AMusicPlayer',
+        originalAuthor: 'Author',
+        originalAuthorDesc: 'AMusicPlayer',
         modifier: 'Modified By',
-        modifierDesc: 'ChiamZhang (Mac optimized edition)',
+        modifierDesc: 'AMusicPlayer',
         importBtn: 'Import',
         empty: 'No imported LX Music scripts',
         notConfigured: 'Not configured (Configure in LX Music Tab)',
@@ -237,7 +237,7 @@ export default {
     gotoUpdate: 'Go to Update',
     gotoGithub: 'Go to Github',
     author: 'Author',
-    authorDesc: 'algerkong Give a star🌟',
+    authorDesc: 'AMusicPlayer',
     messages: {
       checkError: 'Failed to check for updates, please try again later'
     }
