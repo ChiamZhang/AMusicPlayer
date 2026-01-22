@@ -28,7 +28,7 @@ https://github.com/algerkong/AlgerMusicPlayer
 ![1769076391495](image/README/1769076391495.png)
 ![1769076407527](image/README/1769076407527.png)
 ![1769076618309](image/README/1769076618309.png)
-
+![1769077401525](image/README/1769077401525.png)
 ## 致谢
 
 感谢原作者提供的优秀项目与持续维护。

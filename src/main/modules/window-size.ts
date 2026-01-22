@@ -289,6 +289,7 @@ class WindowSizeManager {
       minHeight: MIN_HEIGHT,
       show: false,
       frame: false,
+      backgroundColor: '#000000',
       webPreferences: {
         nodeIntegration: false,
         contextIsolation: true
