@@ -398,7 +398,24 @@ const handleKeydown = (event: KeyboardEvent) => {
 }
 
 .search-box {
-  @apply pb-4 pr-4;
+  @apply pt-3 pb-4 pr-4 pl-8;
+  -webkit-app-region: drag;
+}
+
+.search-box-input,
+.user-box,
+.back-button {
+  -webkit-app-region: no-drag;
+}
+
+.search-box-input {
+  :deep(.n-input),
+  :deep(.n-input__input-el),
+  :deep(.n-input__suffix),
+  :deep(.n-input__prefix),
+  :deep(.n-dropdown) {
+    -webkit-app-region: no-drag;
+  }
 }
 
 .search-box-input {

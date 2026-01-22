@@ -534,7 +534,7 @@ const setMusicFull = () => {
 .progress-fill {
   @apply absolute bottom-0 left-0 transition-all duration-200;
   height: 2px;
-  background: var(--primary-color, #18a058);
+  background: var(--primary-color, #3b82f6);
 }
 
 .like-active {

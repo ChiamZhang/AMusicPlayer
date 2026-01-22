@@ -73,3 +73,15 @@
 :root[class='dark'] {
   --text-color: #ffffffdd;
 }
+
+html,
+body,
+#app {
+  background-color: #fff;
+}
+
+html.dark,
+html.dark body,
+html.dark #app {
+  background-color: #000;
+}

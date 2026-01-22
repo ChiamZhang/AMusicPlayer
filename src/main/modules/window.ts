@@ -353,6 +353,11 @@ export function createMainWindow(icon: Electron.NativeImage): BrowserWindow {
     const [width, height] = mainWindow.getSize();
     console.log(`窗口显示前的大小: ${width}x${height}`);
 
+    // 默认打开调试窗口（仅开发环境）
+    if (is.dev && !app.isPackaged) {
+      mainWindow.webContents.openDevTools({ mode: 'detach' });
+    }
+
     // 强制确保窗口使用正确的大小
     if (savedState && !savedState.isMaximized) {
       mainWindow.setSize(savedState.width, savedState.height, false);

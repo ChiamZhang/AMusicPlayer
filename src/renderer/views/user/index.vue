@@ -551,7 +551,7 @@ const currentLoginType = computed(() => userStore.loginType);
 }
 
 .login-type {
-  @apply text-sm text-green-500 dark:text-green-400;
+  @apply text-sm text-gray-400 dark:text-gray-500;
 }
 
 .mobile {

@@ -1,6 +1,9 @@
 <template>
   <div class="app-container" :class="{ mobile: isMobile, noElectron: !isElectron }">
-    <n-config-provider :theme="theme === 'dark' ? darkTheme : lightTheme">
+    <n-config-provider
+      :theme="theme === 'dark' ? darkTheme : lightTheme"
+      :theme-overrides="themeOverrides"
+    >
       <n-dialog-provider>
         <n-message-provider>
           <router-view></router-view>
@@ -51,6 +54,15 @@ watch(
 const theme = computed(() => {
   return settingsStore.theme;
 });
+
+const themeOverrides = computed(() => ({
+  common: {
+    primaryColor: '#3b82f6',
+    primaryColorHover: '#60a5fa',
+    primaryColorPressed: '#2563eb',
+    primaryColorSuppl: '#1d4ed8'
+  }
+}));
 
 // 监听字体变化并应用
 watch(

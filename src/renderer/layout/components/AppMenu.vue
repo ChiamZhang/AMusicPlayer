@@ -97,6 +97,7 @@ const iconStyle = (index: number) => {
   /* 自定义滚动条样式 - 默认隐藏，悬停时显示 */
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  padding-top: 36px;
   padding-bottom: 20px;
   transition: scrollbar-color 0.3s ease;
 

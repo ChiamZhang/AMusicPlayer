@@ -123,21 +123,26 @@ const drag = (event: MouseEvent) => {
 
 <style scoped lang="scss">
 #title-bar {
-  -webkit-app-region: drag;
-  @apply flex justify-center select-none relative;
+  @apply select-none relative;
   @apply text-dark dark:text-white;
-  height: 28px;
-  padding: 6px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  padding: 0;
   z-index: 3000;
+  pointer-events: none;
 }
 
 #buttons {
   @apply flex;
   -webkit-app-region: no-drag;
   position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 18px;
+  top: 12px;
+  transform: none;
+  pointer-events: auto;
 }
 
 #title {
@@ -153,15 +158,15 @@ const drag = (event: MouseEvent) => {
 
   .button {
     @apply flex items-center justify-center;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     border-radius: 9999px;
-    margin-right: 8px;
+    margin-right: 9px;
     background: #d1d5db;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
 
     i {
-      font-size: 8px;
+      font-size: 10px;
       opacity: 0;
       transition: opacity 0.15s ease;
     }
