@@ -17,6 +17,10 @@ This project is based on AlgerMusicPlayer and follows its MIT license.
 
 ### 说明
 本项目主要针对 macOS 进行优化，重点打磨界面细节，并移除一些与核心体验无关的内容。
+由于没Apple 开发者账户，所以安装后执行：
+```bash
+sudo xattr -cr /Applications/AMusicPlayer.app 
+```
 
 ### 主要改动
 1. 图标调整（适配 macOS Menu Bar）
@@ -29,7 +33,7 @@ This project is based on AlgerMusicPlayer and follows its MIT license.
 8. 压缩应用体积：安装包约 138MB，安装后约 332MB
 
 ### 使用与反馈
-由于个人精力有限，不接受 PR；大 Bug 发邮件，小 Bug 提 Issue，随缘修复。
+由于个人水平有限，不准备 PR 回原项目。Bug 提 Issue，随缘修复。
 
 ### 截图
 ![1769076371863](image/README/1769076371863.png)
