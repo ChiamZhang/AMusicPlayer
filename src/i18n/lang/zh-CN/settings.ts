@@ -231,6 +231,10 @@ export default {
     gotoGithub: '前往 Github',
     author: '作者',
     authorDesc: 'algerkong 点个star🌟呗',
+    originalAuthor: '原作者',
+    originalAuthorDesc: 'Alger / algerkong',
+    modifier: '本版本修改者',
+    modifierDesc: 'ChiamZhang (Mac 优化版)',
     messages: {
       checkError: '检查更新失败，请稍后重试'
     }

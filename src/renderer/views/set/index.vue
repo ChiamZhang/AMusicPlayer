@@ -499,14 +499,26 @@
             </template>
           </setting-item>
 
-          <!-- 作者信息 -->
+          <!-- 原作者信息 -->
           <setting-item
-            :title="t('settings.about.author')"
-            :description="t('settings.about.authorDesc')"
+            :title="t('settings.about.originalAuthor')"
+            :description="t('settings.about.originalAuthorDesc')"
             clickable
             @click="openAuthor"
           >
             <n-button size="small" @click.stop="openAuthor">
+              <i class="ri-github-line mr-1"></i>{{ t('settings.about.gotoGithub') }}
+            </n-button>
+          </setting-item>
+
+          <!-- 本版本修改者 -->
+          <setting-item
+            :title="t('settings.about.modifier')"
+            :description="t('settings.about.modifierDesc')"
+            clickable
+            @click="openModifier"
+          >
+            <n-button size="small" @click.stop="openModifier">
               <i class="ri-github-line mr-1"></i>{{ t('settings.about.gotoGithub') }}
             </n-button>
           </setting-item>
@@ -715,6 +727,11 @@ const openReleasePage = () => {
 
 const openAuthor = () => {
   window.open(setData.value.authorUrl);
+};
+
+const modifierUrl = 'https://github.com/ChiamZhang/AMusicPlayer';
+const openModifier = () => {
+  window.open(modifierUrl);
 };
 
 const restartApp = () => {
