@@ -4,6 +4,9 @@
 
 This project is based on AlgerMusicPlayer and follows its MIT license.
 
+- 本项目地址：https://github.com/ChiamZhang/AMusicPlayer 如果可以请给原作者点个 Star！！！
+- 原作者项目地址：https://github.com/algerkong/AlgerMusicPlayer
+
 — [简体中文](#简体中文) | [English](#english) —
 
 ## 简体中文
@@ -41,9 +44,7 @@ This project is based on AlgerMusicPlayer and follows its MIT license.
 
 PS：代码里的名字已统一为 AMusicPlayer。
 
-### 项目链接
-- 本项目地址：https://github.com/ChiamZhang/AMusicPlayer
-- 原作者项目地址：https://github.com/algerkong/AlgerMusicPlayer
+ 
 
 ### 许可证
 遵循 MIT 开源协议；请在分发或修改时保留许可证与相关说明。
